@@ -33,7 +33,7 @@ void connect()
   WiFi.begin(wifi, pass);
   while (WiFi.status() != WL_CONNECTED)
   {
-    Serial.println("Belum konek");
+    Serial.println("Belum konek"); //when func called in loop its stuck in this while loop oof
     delay(1000);
   }
   Serial.println("Berhasil Wifi Yey");
